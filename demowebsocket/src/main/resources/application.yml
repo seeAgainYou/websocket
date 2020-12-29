@@ -22,3 +22,14 @@ spring:
         expose-session-attributes: true
         expose-spring-macro-helpers: true
         #template-loader-path: classpath:/templates/
+
+info:
+  company:
+    name: sf
+    url: sdf
+    address: sdf
+  author:
+    name: sa
+    depart: fds
+  project:
+    group: xxty

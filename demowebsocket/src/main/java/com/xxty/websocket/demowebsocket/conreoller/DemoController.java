@@ -33,7 +33,8 @@ public class DemoController {
     }
 
     @RequestMapping("/push/{toUserId}")
-    public ResponseEntity<String> pushToWeb(String message, @PathVariable String toUserId) throws IOException {
+    public ResponseEntity<String> pushToWeb(String message,
+                                            @PathVariable String toUserId) throws IOException {
         WebSocketServer.sendInfo(message,toUserId);
         return ResponseEntity.ok("MSG SEND SUCCESS");
     }
